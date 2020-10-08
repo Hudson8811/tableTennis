@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
+@font-face {
+  font-family: 'Uni Neue';
+  src: local('../fonts/Uni Neue Heavy'), local('../fonts/Uni-Neue-Heavy'),
+    url('../fonts/UniNeueHeavy.woff2') format('woff2'),
+    url('../fonts/UniNeueHeavy.woff') format('woff'),
+    url('../fonts/UniNeueHeavy.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Uni Neue Normal';
+  src: local('../fonts/Uni Neue Regular'), local('../fonts/Uni-Neue-Regular'),
+    url('../fonts/UniNeueRegular.woff2') format('woff2'),
+    url('../fonts/UniNeueRegular.woff') format('woff'),
+    url('../fonts/UniNeueRegular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+// РАЗМЕРЫ
+$containerWidth: 1240px;
+
+// ШРИФТЫ
+$heading: 'Uni Neue';
+$headingNormal: 'Uni Neue Normal';
+$text: 'Open Sans', sans-serif;
+
+// РАЗМЕРЫ ШРИФТОВ
+$headingText: 40px;
+$subheadingText: 30px;
+$normalText: 15px;
+$bigText: 18px;
+$supBigText: 20px;
+$supBigText2: 22px;
+
+// ЦВЕТА
+$lightMain: #fff;
+$darkMain: #000;
+$purpule: #3a3fa5;
+$red: #c1292e;
+$darkFont: #2d2d35;
+
+// ЖИРНОСТЬ
+$normal: 400;
+$bold: 700;
+$extraBold: 800;

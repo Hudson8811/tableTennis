@@ -1,0 +1,129 @@
+body {
+  position: relative;
+  display: block;
+  padding: 0;
+  margin: 0;
+  font-family: $text;
+  font-size: $normalText;
+  background-color: $lightMain;
+}
+
+* {
+  outline: none;
+}
+
+a {
+  font-family: $text;
+}
+
+.container {
+  position: relative;
+  display: block;
+  width: calc(100% - 30px);
+  max-width: $containerWidth;
+  margin: 0 auto;
+}
+
+.section {
+  &__title {
+    display: block;
+    font-family: $heading;
+    font-size: $headingText;
+    line-height: 54px;
+    font-weight: $extraBold;
+    letter-spacing: 0.03em;
+  }
+
+  &__subtitle {
+    display: block;
+    font-family: $headingNormal;
+    font-size: $subheadingText;
+    font-weight: $normal;
+    line-height: 135%;
+    letter-spacing: 0.03em;
+  }
+}
+
+.copyright {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 121px;
+
+  img {
+    display: block;
+    width: 113px;
+    margin-right: 24px;
+  }
+
+  span {
+    display: block;
+    max-width: 227px;
+
+    font-family: Georgia;
+    font-weight: $normal;
+    line-height: 135%;
+    letter-spacing: 0.03em;
+    color: $lightMain;
+  }
+}
+
+.arrow--js {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  width: 40px;
+  cursor: pointer;
+
+  &:hover {
+    svg {
+      path {
+        fill: #3a3fa5;
+      }
+    }
+  }
+}
+
+.dots--js {
+  margin: 0 32px;
+  .slick-dots {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    li {
+      margin: 0 16px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &.slick-active {
+        button {
+          height: 16px;
+          width: 16px;
+          background: #3a3fa5;
+        }
+      }
+    }
+
+    button {
+      display: block;
+      height: 8px;
+      width: 8px;
+      padding: 0;
+      margin: 0;
+      color: transparent;
+      border: none;
+      border-radius: 50%;
+      background: #9fa0af;
+      cursor: pointer;
+    }
+  }
+}
