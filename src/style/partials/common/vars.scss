@@ -45,3 +45,66 @@ $darkFont: #2d2d35;
 $normal: 400;
 $bold: 700;
 $extraBold: 800;
+$fill-blocks1: #f7f7fc;
+
+@mixin for-xl {
+  @media (max-width: 1300px) {
+    @content;
+  }
+}
+@mixin for-l {
+  @media (max-width: 1250px) {
+    @content;
+  }
+}
+@mixin for-lit-desk {
+  @media (max-width: 1250px) {
+    @content;
+  }
+}
+@mixin for-lg {
+  @media (max-width: 1130px) {
+    @content;
+  }
+}
+@mixin for-lit-desktop {
+  @media (max-width: 1050px) {
+    @content;
+  }
+}
+@mixin for-md {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+@mixin for-sm {
+  @media (max-width: 760px) {
+    @content;
+  }
+}
+@mixin for-tiny-tablet {
+  @media (max-width: 650px) {
+    @content;
+  }
+}
+@mixin for-md-mob {
+  @media (max-width: 550px) {
+    @content;
+  }
+}
+@mixin for-tiny-mob {
+  @media (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin for-min-mob {
+  @media (min-width: 650px) {
+    @content;
+  }
+}
+@mixin for-lit-mob {
+  @media (max-width: 350px) {
+    @content;
+  }
+}

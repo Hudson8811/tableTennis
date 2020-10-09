@@ -1,0 +1,251 @@
+.text-page-breadcrumbs {
+  padding: 25px 0 35px;
+  @include for-md {
+    padding: 33px 0 19px;
+  }
+  @include for-md-mob {
+    padding: 24px 0 12px;
+  }
+}
+.text-page {
+  padding: 0 0 80px;
+  color: $darkMain;
+  @include for-tiny-tablet {
+    padding-bottom: 40px;
+  }
+  &__title {
+    margin-bottom: 42px;
+    @include for-md {
+      line-height: 41px;
+      margin: 24px 0 32px;
+      br {
+        display: none;
+      }
+    }
+    @include for-md-mob {
+      line-height: 30px;
+    }
+  }
+  p {
+    font-size: 15px;
+    line-height: 24px;
+
+    @include for-md-mob {
+      line-height: 22px;
+    }
+  }
+  h3 {
+    display: block;
+    margin: 36px 0 15px;
+    font-size: 20px;
+
+    @include for-md-mob {
+      font-size: 16px;
+    }
+  }
+  li {
+    font-size: 15px;
+    line-height: 22px;
+
+    margin-top: 15px;
+    &::before {
+      content: '•';
+    }
+  }
+  p + p,
+  ul + p,
+  ol + p {
+    margin-top: 15px;
+  }
+  &__content {
+    display: flex;
+  }
+  &__main-container {
+    width: 100%;
+    padding-right: 97px;
+    box-sizing: border-box;
+    @include for-lg() {
+      padding-right: 50px;
+    }
+    @include for-md() {
+      width: 100%;
+      padding-right: 0;
+    }
+  }
+  img {
+    max-width: 100%;
+  }
+  // &__img-container{
+  //     position: relative;
+  //     overflow: hidden;
+  //     margin-bottom: 24px;
+  //     height: 356px;
+  //     border-radius: 8px;
+  //     @include for-tiny-mob{
+  //         height: 180px;
+  //     }
+  // }
+  // &__img{
+  //     position: relative;
+  //     display: block;
+  //     height: 100%;
+  //     max-width: 100%;
+  //     width: 100%;
+
+  // }
+  &__sidebar {
+    padding: 48px;
+    background: #f7f7fc;
+    border-radius: 15px;
+    height: 100%;
+    width: 461px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    .news-item__img-container {
+      height: 188px;
+    }
+    @include for-xl() {
+      width: 370px;
+    }
+    @include for-md() {
+      display: none;
+    }
+  }
+  &__sidebar-title {
+    margin-bottom: 40px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 22px;
+  }
+  &__item {
+    margin-top: 24px;
+    padding-bottom: 26px;
+    background-color: transparent;
+    border-bottom: 1px solid $lightMain;
+    &:last-child {
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+    &:hover {
+      box-shadow: none;
+    }
+  }
+  &__item-body {
+    padding: 16px 0 0;
+  }
+  &__item-date {
+    margin-bottom: 16px;
+  }
+  &__item-title {
+    margin-bottom: 24px;
+  }
+  &__date {
+    margin-top: 24px;
+    @include for-md-mob {
+      margin: 18px 0 22px;
+    }
+  }
+}
+
+.text-main__banner {
+  border-radius: 8px;
+}
+
+.breadcrumbs {
+  padding: 32px 0 20px;
+  &__list {
+    position: relative;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  &__list-item {
+    display: inline;
+    &:not(:last-child) {
+      .breadcrumbs__item {
+        &:after {
+          content: '/';
+          color: $darkMain;
+          margin: 0 10px;
+        }
+      }
+    }
+  }
+  &__list-item:last-child {
+    .breadcrumbs__item {
+      color: $purpule;
+    }
+  }
+  &__item {
+    font-size: 14px;
+    line-height: 17px;
+    color: $darkMain;
+  }
+}
+
+.text-page-breadcrumbs {
+  padding: 25px 0 35px;
+  @include for-md {
+    padding: 33px 0 19px;
+  }
+  @include for-md-mob {
+    padding: 24px 0 12px;
+  }
+}
+
+.text-page h3 {
+  font-family: $heading;
+}
+
+.text-page {
+  .section__title {
+    text-align: left;
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+
+  @media screen and (max-width: 540px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mainForm__button {
+    margin: 0;
+    width: 220px;
+    text-decoration: none;
+
+    &--prev {
+      padding: 0 32px 0 24px;
+      span {
+        transform: rotate(180deg);
+      }
+    }
+
+    &:first-child {
+      margin-right: 20px;
+
+      @media screen and (max-width: 540px) {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .pagination__link {
+    text-align: right;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    color: $darkMain;
+
+    @media screen and (max-width: 540px) {
+      text-align: center;
+    }
+  }
+}

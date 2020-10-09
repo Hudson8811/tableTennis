@@ -10,6 +10,7 @@ body {
 
 * {
   outline: none;
+  list-style: none;
 }
 
 a {
@@ -32,6 +33,11 @@ a {
     line-height: 54px;
     font-weight: $extraBold;
     letter-spacing: 0.03em;
+
+    @media screen and (max-width: 900px) {
+      font-size: 30px;
+      line-height: 135%;
+    }
   }
 
   &__subtitle {
@@ -41,6 +47,11 @@ a {
     font-weight: $normal;
     line-height: 135%;
     letter-spacing: 0.03em;
+
+    @media screen and (max-width: 900px) {
+      font-size: 20px;
+      line-height: 135%;
+    }
   }
 }
 
@@ -50,10 +61,25 @@ a {
   align-items: center;
   margin-top: 121px;
 
+  @media screen and (max-width: 900px) {
+    justify-content: center;
+    margin-top: 55px;
+
+    span {
+      font-size: 13px;
+      line-height: 18px;
+    }
+  }
+
   img {
     display: block;
     width: 113px;
     margin-right: 24px;
+
+    @media screen and (max-width: 900px) {
+      width: 79px;
+      margin-right: 16px;
+    }
   }
 
   span {

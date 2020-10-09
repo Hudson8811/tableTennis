@@ -9,6 +9,15 @@ $(document).ready(function () {
     prevArrow: $('.reviews__tools--js .arrow--prev--js'),
     nextArrow: $('.reviews__tools--js .arrow--next--js'),
     appendDots: $('.reviews__tools--js .dots--js'),
+    responsive: [
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   });
   // Инициализайия отзывов!
 
@@ -42,7 +51,27 @@ $(document).ready(function () {
     dots: true,
     prevArrow: $('.news__tools--js .arrow--prev--js'),
     nextArrow: $('.news__tools--js .arrow--next--js'),
-    appendDots: $('.news__tools--js .dots--js'),
+    appendDots: $('.news__tools--js .dots--js'),    
+    responsive: [
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   });
   // Инициализайия новостей!
+
+  // Мобильная таблица!
+   $(document).on('click', '.mobileTable__heading', function(){
+    if(!$(this).hasClass('mobileTable__heading--active')){
+      $('.mobileTable__heading').removeClass('mobileTable__heading--active');
+      $('.mobileTable__content').slideUp();
+      $(this).addClass('mobileTable__heading--active');
+      $(this).siblings('.mobileTable__content').slideDown();
+    }
+   })
+  // Мобильная таблица!
 });
