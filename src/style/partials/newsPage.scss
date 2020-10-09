@@ -64,7 +64,6 @@
     flex-shrink: 0;
     height: 208px;
     width: 100%;
-    border-radius: 8px;
     position: relative;
     overflow: hidden;
     @include for-md {
@@ -78,7 +77,6 @@
     background-color: #fff;
     background-repeat: no-repeat;
     background-position: center;
-    border-radius: 8px;
     background-size: cover;
     transition: 1.5s;
     &:hover {
@@ -124,12 +122,11 @@
   }
 
   .header-wrapper {
-    padding: 20px 0;
+    padding: 35px 0;
 
     background-color: $purpule;
 
     .header {
-      align-items: center;
       margin-bottom: 0;
     }
   }

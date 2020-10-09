@@ -147,17 +147,16 @@
   }
 }
 
-.text-main__banner {
-  border-radius: 8px;
-}
-
 .breadcrumbs {
   padding: 32px 0 20px;
   &__list {
     position: relative;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
+
+    @media screen and (min-width: 768px) {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
   }
   &__list-item {
     display: inline;
@@ -180,6 +179,7 @@
     font-size: 14px;
     line-height: 17px;
     color: $darkMain;
+    text-decoration: none;
   }
 }
 

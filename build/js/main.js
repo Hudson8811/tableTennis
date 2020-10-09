@@ -184,4 +184,10 @@ $(document).ready(function () {
     }
    })
   // Мобильная таблица!
+
+  // Плейсхолдеры!
+  $(document).on('focus', 'input', function(){
+    $(this).attr('placeholder', '');
+  })
+  // Плейсхолдеры!
 });
