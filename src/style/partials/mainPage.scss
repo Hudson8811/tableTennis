@@ -1384,3 +1384,9 @@
     }
   }
 }
+
+input.placeholder--off {
+  &::placeholder {
+    color: transparent;
+  }
+}

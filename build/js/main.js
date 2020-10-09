@@ -187,7 +187,11 @@ $(document).ready(function () {
 
   // Плейсхолдеры!
   $(document).on('focus', 'input', function(){
-    $(this).attr('placeholder', '');
+    $(this).addClass('placeholder--off');
+  })
+
+  $(document).on('blur', 'input', function(){
+    $(this).removeClass('placeholder--off');
   })
   // Плейсхолдеры!
 });
